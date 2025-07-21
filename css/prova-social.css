@@ -1,0 +1,43 @@
+.section-resultados {
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.resultado-box {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resultado-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.new-background{
+  position: relative;
+  background-image: url('../assets/img/gifFundoLaranja.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.new-background::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* intensidade do blackout */
+  z-index: -1;
+}
+
+.icone-cx {
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

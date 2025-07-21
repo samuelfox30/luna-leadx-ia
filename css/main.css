@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+/* === main.css === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.icons-color{
+  color: #FF4F00;
+}
+
+.red-icon{
+  color: #d10000;
+}
+
+.bg-cx{
+  background-color: #FF4F00;
+}
+
+.botao-animado{
+  transition: 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+              url('../assets/img/gifFundoLaranja.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.botao-animado:hover{
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+
+.linha-borda{
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.p100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.botao-secundario{
+  transition: 0.3s;
+  background-color: black;
+  border: 1px solid #FF4F00;
+  color: #FF4F00;
+}
+
+.botao-secundario:hover{
+  transition: 0.3s;
+  transform: translateY(-5px);
+  border: 1px solid #FF4F00;
+}

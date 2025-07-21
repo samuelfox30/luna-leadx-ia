@@ -1,0 +1,181 @@
+.section-como-funciona {
+  background-color: #000000;
+  padding: 80px 20px;
+  padding-bottom: 130px;
+}
+
+/* Abas estilo navegador */
+.passos-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px solid #ff7a00; /* padrão desktop */
+}
+
+.tab-btn {
+  background: #1a1a1a;
+  border: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin-right: 2px;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: 0 -2px 0 transparent inset;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 122, 0, 0.1);
+}
+
+.tab-btn.ativo {
+  background: #ff7a00;
+  color: #000;
+  box-shadow: 0 -2px 0 #000 inset;
+}
+
+.tab-btn.ativo:hover {
+  background: #e96a00;
+  color: #000 !important;
+}
+
+/* Conteúdo da aba com fade-in suave */
+.passos-conteudo {
+  position: relative;
+  min-height: 220px;
+}
+
+.tab-passo {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 0 0 8px 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.tab-passo.ativo {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  position: relative;
+}
+
+/* Layout interno: ícone + texto + imagem */
+.passo-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.passo-texto {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.passo-texto i {
+  color: #ff7a00; /* ou use .bg-cx */
+}
+
+.passo-texto p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.passo-imagem {
+  flex: 1;
+  max-width: 280px;
+}
+
+.passo-imagem img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsividade mobile: abas verticais com linha lateral */
+@media (max-width: 768px) {
+  .passos-nav {
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: none;
+    border-left: 2px solid #ff7a00;
+  }
+
+  .tab-btn {
+    width: 100%;
+    border-radius: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .tab-btn.ativo {
+    border-radius: 0;
+  }
+
+  .passo-content {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .passo-texto {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .passo-imagem {
+    max-width: 100%;
+  }
+
+  .passo-imagem img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+/* Ajuste no desktop para deixar o conteúdo mais junto */
+@media (min-width: 769px) {
+  .passo-content {
+    justify-content: center;
+  }
+
+  .passo-texto {
+    flex: none;
+    max-width: 460px;
+  }
+
+  .passo-imagem {
+    flex: none;
+    max-width: 240px;
+  }
+
+  .passo-texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

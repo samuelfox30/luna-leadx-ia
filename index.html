@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BOOTSTRAP IMPORTS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> <!--ICONS-->
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!--LOCAL CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/headerHero.css">
+    <link rel="stylesheet" href="css/dores-section.css">
+    <link rel="stylesheet" href="css/quem-e-a-luna.css">
+    <link rel="stylesheet" href="css/como-funciona.css">
+    <link rel="stylesheet" href="css/section_empresas.css">
+    <link rel="stylesheet" href="css/prova-social.css">
+    <link rel="stylesheet" href="css/perguntas.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/call-for-action.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/beneficios.css">
+
+</head>
+<body>
+    
+<!-- ============================================== HEADER ================================================================ -->
+<header class="cabecalho-flutuante">
+  <div class="cabecalho-container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="assets/img/leadx logo.png" alt="Logo Leadx IA">
+    </div>
+
+    <!-- Navegação -->
+    <nav class="menu-links">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#plataforma">Plataforma</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <!-- Botão CTA -->
+    <div class="cta">
+      <a href="#formulario" class="btn-cta botao-animado">
+        <i class="bi bi-lightning-fill me-2"></i>Quero ativar a Luna
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================== HERO ================================================================ -->
+<div class="hero-bg">
+  <!-- HERO -->
+  <section class="padding-hero text-white">
+  <div class="container">
+    <div class="row align-items-center gx-5">
+      <!-- Imagem do lado esquerdo -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="assets/img/resumo-IA-whatsapp-unscreen.gif" alt="Mockup do ebook" class="img-fluid hero-book">
+      </div>
+
+      <!-- Texto do lado direito -->
+      <div class="col-md-6 text-md-start text-center hero-text-box-light mt-5">
+        <h1 class="fw-bold mb-3 titulo-grande">
+          <span class="icons-color">Vender</span> pelo <span class="icons-color">Whatsapp</span> <span class="icons-color">nunca</span> foi tão <span class="icons-color">fácil</span>
+        </h1>
+        <h2 class="h3 fw-semibold text-color-cx">
+          Conheça a <span class="icons-color">Luna</span> - sua nova assistente de atendimento com <span class="icons-color">Inteligência artificial</span>
+        </h2>
+        <p class="lead mb-4">
+          Com a <span class="icons-color">Luna</span>, seus clientes recebem atendimento <span class="icons-color">imediato</span>, <span class="icons-color">humano</span> e <span class="icons-color">eficiente</span> sem aumentar equipe.
+        </p>
+        <a href="#formulario" class="btn btn-lg fw-bold botao-animado quero-comecar-agora" onclick="abrirFormulario()">
+          <i class="bi bi-lightning-fill me-2"></i>QUERO COMEÇAR AGORA
+        </a>
+        <a href="#formulario" class="btn btn-lg fw-bold botao-secundario">
+          <i class="bi bi-list-check me-2"></i>VER PLANOS
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<script src="js/hero.js"></script>
+
+<!-- ============================================== SECTION PROVA SOCIAL ================================================================ -->
+<div class="new-background">
+<section class="section-resultados text-white">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      
+      <!-- Bloco 1 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="resultado-box p-4 rounded-4 h-100">
+          <i class="bi bi-bar-chart-line-fill fs-1 mb-2 icons-color"></i>
+          <h3 class="display-6 fw-bold">4x mais</h3>
+          <p class="mb-0">vendas com atendimento rápido e personalizado</p>
+        </div>
+      </div>
+
+      <!-- Bloco 2 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="resultado-box p-4 rounded-4 h-100">
+          <i class="bi bi-emoji-smile-fill fs-1 mb-2 icons-color"></i>
+          <h3 class="display-6 fw-bold">62%</h3>
+          <p class="mb-0">mais satisfação dos clientes com respostas imediatas</p>
+        </div>
+      </div>
+
+      <!-- Bloco 3 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="resultado-box p-4 rounded-4 h-100">
+          <i class="bi bi-clipboard-check-fill fs-1 mb-2 icons-color"></i>
+          <h3 class="display-6 fw-bold">80%</h3>
+          <p class="mb-0">menos trabalho operacional para a equipe de atendimento</p>
+        </div>
+      </div>
+
+      <!-- Bloco 4 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="resultado-box p-4 rounded-4 h-100">
+          <i class="bi bi-currency-dollar fs-1 mb-2 icons-color"></i>
+          <h3 class="display-6 fw-bold">72%</h3>
+          <p class="mb-0">menos custos operacionais com atendimento</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</div>
+<script src="js/prova-social.js"></script>
+
+<!-- QUEM E A LUNA ------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="section-luna text-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Enquanto você <span class="icons-color">foca no crescimento</span>, a <span class="icons-color">Luna cuida do atendimento</span> com eficiência</h2>
+    <p class="lead mb-5">
+      Diferente de chatbots comuns, a Luna simula conversas reais, se adapta ao perfil do seu lead e executa seu processo comercial com precisão e empatia.
+    </p>
+
+    <div class="video-wrapper mx-auto rounded-4 overflow-hidden shadow">
+      <iframe class="video" 
+        src="https://www.youtube.com/embed/aCj6pUEbMss"
+        title="Luna IA - Apresentação"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="#formulario" class="btn btn-lg fw-bold botao-animado call-for-action-video" onclick="abrirFormulario()">
+      <i class="bi bi-lightning-fill me-2"></i>QUERO COMEÇAR AGORA
+    </a>
+  </div>
+</section>
+
+<!-- BENEFICIOS DA JORNADA -------------------------------------------------------------------------------------------------------------------------------------->
+<section class="section-funcionalidades text-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Jornada de compra <span class="icons-color">100% automatizada</span> – foco em vendas</h2>
+
+    <div class="row justify-content-center">
+      <!-- Bloco 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="feature-box p-4 rounded-4 h-100 text-start d-flex flex-column">
+          <i class="bi bi-clock-fill fs-2 mb-3 icons-color"></i>
+          <h5 class="fw-bold mb-2">Atendimento 24/7</h5>
+          <p>Resposta imediata em qualquer horário.</p>
+        </div>
+      </div>
+
+      <!-- Bloco 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="feature-box p-4 rounded-4 h-100 text-start d-flex flex-column">
+          <i class="bi bi-stars fs-2 mb-3 icons-color"></i>
+          <h5 class="fw-bold mb-2">Comunicação Natural</h5>
+          <p>Mensagens humanizadas, áudios e adaptação de tom conforme perfil.</p>
+        </div>
+      </div>
+
+      <!-- Bloco 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="feature-box p-4 rounded-4 h-100 text-start d-flex flex-column">
+          <i class="bi bi-search fs-2 mb-3 icons-color"></i>
+          <h5 class="fw-bold mb-2">Qualificação Inteligente</h5>
+          <p>Filtro automático de leads com real potencial.</p>
+        </div>
+      </div>
+
+      <!-- Bloco 4 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="feature-box p-4 rounded-4 h-100 text-start d-flex flex-column">
+          <i class="bi bi-plug-fill fs-2 mb-3 icons-color"></i>
+          <h5 class="fw-bold mb-2">Integração Total</h5>
+          <p>Conecta com CRM, agenda, WhatsApp e campanhas.</p>
+        </div>
+      </div>
+
+      <!-- Bloco 5 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="feature-box p-4 rounded-4 h-100 text-start d-flex flex-column">
+          <i class="bi bi-speedometer2 fs-2 mb-3 icons-color"></i>
+          <h5 class="fw-bold mb-2">Execução Rápida</h5>
+          <p>Respostas em tempo real com prioridade inteligente.</p>
+        </div>
+      </div>
+
+      <!-- Bloco 6 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="feature-box p-4 rounded-4 h-100 text-start d-flex flex-column">
+          <i class="bi bi-bar-chart-line-fill fs-2 mb-3 icons-color"></i>
+          <h5 class="fw-bold mb-2">Dashboard em Tempo Real</h5>
+          <p>Acompanhamento dos atendimentos e conversões minuto a minuto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== SECTION EMPRESAS ================================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<section class="padding-empresas text-white linha-borda">
+  <div class="container">
+    <h2 class="text-center mb-4"><b>Empresas que <span class="icons-color">confiam:</span></b></h2>
+
+    <div class="swiper logo-swiper">
+      <div class="swiper-wrapper align-items-center">
+
+        <!-- Logo 1 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel1.webp" class="img-empresa-carrossel" alt="Empresa 1">
+        </div>
+
+        <!-- Logo 2 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel2.jpeg" class="img-empresa-carrossel" alt="Empresa 2">
+        </div>
+
+        <!-- Logo 3 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel3.jpeg" class="img-empresa-carrossel" alt="Empresa 3">
+        </div>
+
+        <!-- Logo 4 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel4.jpeg" class="img-empresa-carrossel" alt="Empresa 4">
+        </div>
+
+        <!-- Logo 5 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel5.webp" class="img-empresa-carrossel" alt="Empresa 5">
+        </div>
+
+        <!-- Logo 6 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel6.webp" class="img-empresa-carrossel" alt="Empresa 6">
+        </div>
+
+        <!-- Logo 7 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel7.webp" class="img-empresa-carrossel" alt="Empresa 7">
+        </div>
+
+        <!-- Logo 8 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel8.jpeg" class="img-empresa-carrossel" alt="Empresa 8">
+        </div>
+
+        <!-- Logo 9 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel9.webp" class="img-empresa-carrossel" alt="Empresa 9">
+        </div>
+
+        <!-- Logo 10 -->
+        <div class="swiper-slide text-center">
+          <img src="assets/img/carrossel10.webp" class="img-empresa-carrossel" alt="Empresa 10">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Selo -->
+    <div class="text-center mt-4">
+      <img src="assets/img/selo-de-cera.png" alt="Selo de Garantia" height="60">
+    </div>
+  </div>
+</section>
+<script src="js/section_empresas.js"></script>
+
+<!-- DORES QUE A LUNA RESOLVE ------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="p100 section-dores">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-white">Se sua empresa está enfrentando...</h2>
+    </div>
+
+    <div class="row text-white justify-content-center">
+      <!-- Dor 1 -->
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="pain-point-box text-center p-3 rounded-4">
+          <i class="bi bi-people-fill fs-3 red-icon mb-2"></i>
+          <div class="txt-topic">Equipe comercial sobrecarregada</div>
+        </div>
+      </div>
+      <!-- Dor 2 -->
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="pain-point-box text-center p-3 rounded-4">
+          <i class="bi bi-x-circle-fill fs-3 red-icon mb-2"></i>
+          <div class="txt-topic">Leads não atendidos</div>
+        </div>
+      </div>
+      <!-- Dor 3 -->
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="pain-point-box text-center p-3 rounded-4">
+          <i class="bi bi-calendar-x-fill fs-3 red-icon mb-2"></i>
+          <div class="txt-topic">Poucas reuniões agendadas</div>
+        </div>
+      </div>
+      <!-- Dor 4 -->
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="pain-point-box text-center p-3 rounded-4">
+          <i class="bi bi-diagram-3-fill fs-3 red-icon mb-2"></i>
+          <div class="txt-topic">Funil desorganizado</div>
+        </div>
+      </div>
+      <!-- Dor 5 -->
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+        <div class="pain-point-box text-center p-3 rounded-4">
+          <i class="bi bi-gear-fill fs-3 red-icon mb-2"></i>
+          <div class="txt-topic">Processos manuais</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <h5 class="fw-semibold text-light">
+        Então a solução é automatizar com <span class="icons-color">Luna</span>. <br>
+        Ela cuida do <strong>atendimento</strong>, você foca no <strong>fechamento</strong>.
+      </h5>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA ------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="section-como-funciona text-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">
+      Como funciona a plataforma <span class="icons-color">Leadx IA</span>
+    </h2>
+
+    <div class="passos-tabs">
+      <div class="passos-nav">
+        <button class="tab-btn ativo" data-tab="passo1">1. Conte sobre sua operação</button>
+        <button class="tab-btn" data-tab="passo2">2. Onboarding personalizado</button>
+        <button class="tab-btn" data-tab="passo3">3. Implementação assistida</button>
+        <button class="tab-btn" data-tab="passo4">4. Piloto automático</button>
+      </div>
+
+      <div class="passos-conteudo">
+        <!-- Passo 1 -->
+        <div class="tab-passo ativo" id="passo1">
+          <div class="passo-content">
+            <div class="passo-texto">
+              <i class="bi bi-chat-text fs-2 icons-color"></i>
+              <p>Formulário simples + reunião estratégica para entender seu modelo de negócios, nicho e metas.</p>
+            </div>
+            <div class="passo-imagem">
+              <img src="assets/img/formulario-simples.jpg" alt="Imagem do passo 1">
+            </div>
+          </div>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="tab-passo" id="passo2">
+          <div class="passo-content">
+            <div class="passo-texto">
+              <i class="bi bi-person-video3 fs-2 icons-color"></i>
+              <p>Treinamento da Luna com seus scripts comerciais, ICP, pitch de vendas e lógica de qualificação.</p>
+            </div>
+            <div class="passo-imagem">
+              <img src="assets/img/onboarding-personalizado.jpeg" alt="Imagem do passo 2">
+            </div>
+          </div>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="tab-passo" id="passo3">
+          <div class="passo-content">
+            <div class="passo-texto">
+              <i class="bi bi-plug-fill fs-2 icons-color"></i>
+              <p>Integração com CRM, WhatsApp, Google Ads e demais plataformas — com suporte técnico assistido.</p>
+            </div>
+            <div class="passo-imagem">
+              <img src="assets/img/implementacao-assistida.webp" alt="Imagem do passo 3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="tab-passo" id="passo4">
+          <div class="passo-content">
+            <div class="passo-texto">
+              <i class="bi bi-robot fs-2 icons-color"></i>
+              <p>A Luna entra em ação e começa a atender leads, qualificar e agendar reuniões no piloto automático.</p>
+            </div>
+            <div class="passo-imagem">
+              <img src="assets/img/piloto-automatico.webp" alt="Imagem do passo 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/como-funciona.js"></script>
+
+<!-- ============================================== SECTION PERGUNTAS ================================================================ -->
+<section class="section-faq text-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">FAQ – <span class="icons-color">Perguntas Frequentes</span></h2>
+
+    <div class="faq-box">
+      <!-- Pergunta 1 -->
+      <div class="faq-item">
+        <button class="faq-pergunta">A Luna fala <span class="icons-color">como um humano?</span></button>
+        <div class="faq-resposta">
+          <p>Sim! A Luna utiliza linguagem natural e simula conversas reais com empatia e fluidez.</p>
+        </div>
+      </div>
+
+      <!-- Pergunta 2 -->
+      <div class="faq-item">
+        <button class="faq-pergunta">Posso usar <span class="icons-color">meu número atual?</span></button>
+        <div class="faq-resposta">
+          <p>Sim, você pode integrar a Luna ao seu número atual do WhatsApp Business.</p>
+        </div>
+      </div>
+
+      <!-- Pergunta 3 -->
+      <div class="faq-item">
+        <button class="faq-pergunta"><span class="icons-color">Quantas reuniões posso gerar</span> por mês?</button>
+        <div class="faq-resposta">
+          <p>Não há limite fixo — depende do volume de leads e da sua estratégia. A Luna escala conforme sua demanda.</p>
+        </div>
+      </div>
+
+      <!-- Pergunta 4 -->
+      <div class="faq-item">
+        <button class="faq-pergunta">A IA pode <span class="icons-color">integrar com meu CRM</span>?</button>
+        <div class="faq-resposta">
+          <p>Sim! A Luna pode ser integrada com CRMs como HubSpot, Pipedrive, RD Station e outros via API.</p>
+        </div>
+      </div>
+
+      <!-- Pergunta 5 -->
+      <div class="faq-item">
+        <button class="faq-pergunta">Funciona mesmo <span class="icons-color">sem equipe comercial?</span></button>
+        <div class="faq-resposta">
+          <p>Sim. A Luna pode assumir o atendimento inicial, qualificação e agendamento sem depender de um time comercial.</p>
+        </div>
+      </div>
+
+      <!-- Pergunta 6 -->
+      <div class="faq-item">
+        <button class="faq-pergunta">Posso <span class="icons-color">personalizar o roteiro</span> da Luna?</button>
+        <div class="faq-resposta">
+          <p>Com certeza. Você define o tom, as perguntas, os critérios de qualificação e até as respostas da IA.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/perguntas.js"></script>
+
+<!-- ============================================== FINAL CALL FOR ACTION ================================================================ -->
+<section class="section-cta-final text-white text-center py-5">
+  <div class="container">
+    <h2 class="fw-bold display-5 mb-3">O futuro das vendas chegou. E tem nome: <span class="icons-color">Luna</span>.</h2>
+    <p class="lead mb-4">Ative agora sua IA SDR e comece a agendar reuniões todos os dias, sem esforço manual.</p>
+    <a href="#formulario" class="btn btn-lg fw-bold botao-animado" onclick="abrirFormulario()">
+      <i class="bi bi-lightning-fill me-2"></i>Quero ativar a Luna agora
+    </a>
+  </div>
+</section>
+
+<!-- ============================================== FOOTER ================================================================ -->
+<footer class="rodape-site text-white text-center py-4">
+  <div class="container">
+    <p class="mb-2 small">
+      <a href="#privacidade" class="text-white text-decoration-none me-2">Política de Privacidade</a> |
+      <a href="#termos" class="text-white text-decoration-none ms-2">Termos de Uso</a>
+    </p>
+    <p class="mb-2 small">Desenvolvido por <strong>ConversãoX</strong></p>
+    <p class="mb-0 small">© 2025 <strong>Leadx IA</strong>. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ============================================== FORMULARIO ================================================================ -->
+<!-- Botão que abre o pop-up -->
+<!-- <button class="btn btn-lg botao-formulario" onclick="abrirFormulario()">Solicitar ativação</button> -->
+<!-- Pop-up do formulário -->
+<div id="formPopup" class="form-popup">
+  <div class="form-container">
+    <span class="fechar" onclick="fecharFormulario()">&times;</span>
+    <h2 class="mb-4">Ative sua IA SDR agora</h2>
+
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <input type="tel" placeholder="WhatsApp (DDD + número)" required>
+      <textarea placeholder="Escreva sua dúvida ou objetivo..." rows="4"></textarea>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </div>
+<script>
+  function abrirFormulario() {
+    document.getElementById("formPopup").style.display = "flex";
+  }
+
+  function fecharFormulario() {
+    document.getElementById("formPopup").style.display = "none";
+  }
+
+  // Fechar ao clicar fora
+  window.addEventListener("click", function(e) {
+    const popup = document.getElementById("formPopup");
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+</script>
+</div>
+
+<!--FADE UP EFECT-->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // duração da animação em ms
+    once: true     // anima só uma vez
+  });
+</script>
+</body>
+</html>

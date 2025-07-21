@@ -1,0 +1,66 @@
+.section-luna {
+  background-color: #000;
+  padding-top: 150px;
+  padding-bottom: 130px;
+  text-align: center;
+}
+
+.section-luna h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.section-luna p.lead {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Vídeo centralizado com tamanho controlado */
+.video-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+  aspect-ratio: 16 / 9;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.call-for-action-video{
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-luna {
+    padding: 80px 20px;
+  }
+
+  .section-luna h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-luna p.lead {
+    font-size: 1rem;
+  }
+
+  .video-wrapper {
+    aspect-ratio: unset;
+    height: 220px;
+  }
+
+  .video {
+    height: 100%;
+    width: 100%;
+  }
+}
