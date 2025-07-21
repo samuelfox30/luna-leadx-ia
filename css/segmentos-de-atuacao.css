@@ -1,0 +1,11 @@
+.section-segmentos {
+  /* padding: 60px 0; */
+  background-color: #000;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-segmentos p {
+  margin: 0.5rem 0 0;
+}

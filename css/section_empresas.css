@@ -11,6 +11,10 @@
 .padding-empresas{
     padding-top: 100px;
     padding-bottom: 90px;
-    padding-left: 5px;
-    padding-right: 5px
+}
+
+@media (max-width: 1000px) {
+    .padding-empresas{
+        width: 100%;
+    }
 }
