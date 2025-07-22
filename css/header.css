@@ -6,7 +6,7 @@
   right: 20px;
   margin: 0 auto;
   max-width: 1100px;
-  background: rgba(0, 0, 0, 0.6); /* fundo escuro semi-transparente */
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-radius: 16px;
@@ -19,17 +19,11 @@
 
 /* Animação de entrada */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Layout interno */
+/* Layout interno do cabeçalho */
 .cabecalho-container {
   display: flex;
   align-items: center;
@@ -42,7 +36,7 @@
   height: 40px;
 }
 
-/* Links */
+/* Navegação links */
 .menu-links {
   display: flex;
   gap: 2rem;
@@ -59,34 +53,77 @@
   color: #ff7a00;
 }
 
-/* Botão CTA */
-
+/* Botão CTA desktop */
 .btn-cta {
   background-color: #ff7a00;
   color: white;
-  /* padding: 0.6rem 1.2rem; */
-  margin: 0;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  padding: 0.6rem 1.2rem;
 }
 
 .btn-cta:hover {
   background-color: #e96a00;
 }
 
-/* Responsivo */
+/* Botão hambúrguer mobile */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: none;
+}
+
+.menu-toggle i {
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* RESPONSIVO: ajusta layout no celular */
 @media (max-width: 768px) {
   .cabecalho-container {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    gap: 1rem;
   }
 
+  /* Oculta botão CTA no mobile */
+  .cta {
+    display: none;
+  }
+
+  /* Mostra botão hamburguer */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Menu escondido por padrão */
   .menu-links {
+    display: none;
     flex-direction: column;
     gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease;
+    align-items: center;
   }
+
+  /* Menu ativo */
+  .menu-links.ativo {
+    display: flex;
+  }
+}
+
+/* Animação de fade-in menu */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

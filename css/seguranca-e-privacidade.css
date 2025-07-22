@@ -1,0 +1,72 @@
+.section-seguranca-luna {
+  background: linear-gradient(to bottom, #0c0c0c, #1a1a1a);
+}
+
+.seguranca-box {
+  background-color: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.seguranca-box:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.15);
+}
+
+.seguranca-box i {
+  color: #ff7a00;
+}
+
+.seguranca-box h5 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.seguranca-box .descricao {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+}
+
+/* Selos de certificação */
+.selo-certificacao {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.04);
+  padding: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.selo-certificacao:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-seguranca-luna h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-seguranca-luna p.lead {
+    font-size: 1rem;
+  }
+
+  .seguranca-box h5 {
+    font-size: 1.1rem;
+  }
+
+  .seguranca-box .descricao {
+    font-size: 0.95rem;
+  }
+
+  .selo-certificacao {
+    width: 100px;
+  }
+}
