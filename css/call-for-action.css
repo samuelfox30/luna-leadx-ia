@@ -1,6 +1,17 @@
 .section-cta-final {
-  background: linear-gradient(to bottom, #a85100, #693300);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+              url('../assets/img/gifFundoLaranja.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 100px 20px;
+}
+
+.cta-box {
+  background-color: rgba(0, 0, 0, 0.39);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
 }
 
 .section-cta-final h2 {
@@ -12,17 +23,60 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-.section-cta-final .btn {
-  background-color: #ff7a00; /* ou use sua .bg-cx */
-  color: #fff;
+/* Botão principal */
+.botao-primario {
+  background-color: #ff7a00;
+  color: white;
   border: none;
-  padding: 0.75rem 2rem;
-  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
   border-radius: 50px;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* melhor que me-2 às vezes */
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.section-cta-final .btn:hover {
+.botao-primario:hover {
   background-color: #e96a00;
   transform: scale(1.05);
+}
+
+/* Botão secundário */
+.botao-secundario-mesmo {
+  background-color: transparent;
+  border: 2px solid #ff7a00;
+  color: #ff7a00;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 48px; /* altura igual ao botão principal */
+  line-height: 1;
+}
+
+.botao-secundario-mesmo:hover {
+  background-color: rgba(255, 122, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-cta-final h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-cta-final .lead {
+    font-size: 1rem;
+  }
+
+  .botao-primario,
+  .botao-secundario-mesmo {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+  }
 }

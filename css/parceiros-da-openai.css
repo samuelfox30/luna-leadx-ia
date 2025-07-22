@@ -1,0 +1,75 @@
+.section-parceiras {
+  background: linear-gradient(to bottom, #000000, #000000);
+}
+
+.parceira-box {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.parceira-box:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.logo-parceira {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255); /* opcional pra destacar imagem irregular */
+  padding: 12px; /* dá respiro se a logo for menor dentro da área */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  margin-bottom: 1rem;
+}
+
+.parceira-box h5 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.parceira-box .descricao {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-parceiras h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-parceiras p.lead {
+    font-size: 1rem;
+  }
+
+  .logo-parceira {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .parceira-box .descricao {
+    font-size: 0.95rem;
+  }
+}
+
+/* Google */
+.parceira-box.google {
+  background: linear-gradient(135deg, #4285F4, #34A853, #FBBC05, #EA4335);
+}
+
+/* Meta */
+.parceira-box.meta {
+  background: linear-gradient(135deg, #1877F2, #8B9DC3);
+}
+
+/* OpenAI */
+.parceira-box.openai {
+  background: linear-gradient(135deg, #10A37F, #1A1A1A);
+}

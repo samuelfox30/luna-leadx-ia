@@ -1,0 +1,163 @@
+.section-planos-luna {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+}
+
+/* Alternador de planos */
+.plano-seletor .btn {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.plano-seletor .btn.ativo {
+  background-color: #ff7a00;
+  color: black;
+  border-color: #ff7a00;
+}
+
+.desconto {
+  background-color: #ff7a00;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  margin-left: 6px;
+}
+
+/* Card base */
+.plano-card {
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.plano-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.15);
+}
+
+.plano-card h5 {
+  color: white;
+}
+
+.lista-plano {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.lista-plano li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.novidade {
+  background: #ff7a00;
+  color: black;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+
+.exclusivo {
+  background: #0dcaf0;
+  color: black;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+
+/* Preços */
+.preco-mensal {
+  color: #ff7a00;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.preco-original {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  text-decoration: line-through;
+  margin-bottom: 0.3rem;
+}
+
+.preco-anual {
+  font-size: 1.6rem;
+  color: #ff7a00;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.selo-desconto {
+  background: #ff7a00;
+  color: black;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Botão de ação */
+.btn-ativar-plano {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-ativar-plano:hover {
+  background-color: #e96a00;
+  transform: scale(1.05);
+}
+
+/* Cores por plano */
+.aceleracao {
+  background: linear-gradient(135deg, #232323, #2e2e2e);
+}
+
+.growth {
+  background: linear-gradient(135deg, #2c1f00, #5c3300);
+}
+
+.scaleup {
+  background: linear-gradient(135deg, #1c1c3c, #002a60);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-planos-luna h2 {
+    font-size: 1.8rem;
+  }
+
+  .plano-card {
+    padding: 1.5rem;
+  }
+
+  .lista-plano {
+    font-size: 0.95rem;
+  }
+
+  .btn-ativar-plano {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
