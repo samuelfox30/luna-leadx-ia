@@ -1,5 +1,7 @@
 .section-seguranca-luna {
-  background: linear-gradient(to bottom, #0c0c0c, #1a1a1a);
+  background: linear-gradient(to bottom, #000000, #000000);
+  padding-top: 130px;
+  padding-bottom: 150px;
 }
 
 .seguranca-box {

@@ -1,5 +1,6 @@
 .section-planos-luna {
   background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  padding: 150px 20px;
 }
 
 /* Alternador de planos */
@@ -27,7 +28,7 @@
   margin-left: 6px;
 }
 
-/* Card base */
+/* Cards dos planos */
 .plano-card {
   background-color: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.08);
@@ -60,27 +61,24 @@
   color: rgba(255,255,255,0.85);
 }
 
-.novidade {
-  background: #ff7a00;
-  color: black;
+.novidade, .exclusivo {
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 8px;
   font-size: 0.8rem;
   margin-left: 8px;
+}
+
+.novidade {
+  background: #ff7a00;
+  color: black;
 }
 
 .exclusivo {
   background: #0dcaf0;
   color: black;
-  font-weight: 600;
-  padding: 2px 8px;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  margin-left: 8px;
 }
 
-/* Preços */
 .preco-mensal {
   color: #ff7a00;
   font-size: 1.4rem;
@@ -99,17 +97,6 @@
   color: #ff7a00;
   font-weight: bold;
   margin-bottom: 0.3rem;
-}
-
-.selo-desconto {
-  background: #ff7a00;
-  color: black;
-  font-weight: 600;
-  padding: 2px 8px;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-  display: inline-block;
 }
 
 /* Botão de ação */
@@ -142,14 +129,74 @@
   background: linear-gradient(135deg, #1c1c3c, #002a60);
 }
 
+/* Texto destaque abaixo dos planos */
+.destaque-texto {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,0.04);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Popup oferta relâmpago */
+.popup-oferta {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 320px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+  z-index: 9999;
+  display: none;
+  animation: fadeIn 0.6s ease;
+}
+
+.popup-content h5 {
+  color: #ff7a00;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.popup-content p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+}
+
+.popup-content a.btn {
+  display: block;
+  margin-top: 1rem;
+}
+
+.btn-fechar {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
-  .section-planos-luna h2 {
-    font-size: 1.8rem;
+  .section-planos-luna {
+    padding: 60px 16px;
   }
 
-  .plano-card {
-    padding: 1.5rem;
+  .section-planos-luna h2 {
+    font-size: 1.6rem;
   }
 
   .lista-plano {
@@ -159,5 +206,20 @@
   .btn-ativar-plano {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  .popup-oferta {
+    bottom: 20px;
+    right: 16px;
+    max-width: 280px;
+    padding: 1rem;
+  }
+
+  .popup-content p {
+    font-size: 0.9rem;
+  }
+
+  .popup-content h5 {
+    font-size: 1rem;
   }
 }

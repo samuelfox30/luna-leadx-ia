@@ -1,75 +1,81 @@
-.section-parceiras {
-  background: linear-gradient(to bottom, #000000, #000000);
+.section-parceiras-horizontal {
+  /* background: linear-gradient(135deg, #121212, #1f1f1f, #505050); */
+  background-color: black;
+  /* padding: 80px 20px; */
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 
-.parceira-box {
-  background-color: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(6px);
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-}
-
-.parceira-box:hover {
-  transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.15);
-}
-
-.logo-parceira {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  border-radius: 16px;
-  background-color: rgb(255, 255, 255); /* opcional pra destacar imagem irregular */
-  padding: 12px; /* dá respiro se a logo for menor dentro da área */
-  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+/* Título e texto */
+.section-parceiras-horizontal h2 {
+  font-size: 2rem;
+  color: white;
   margin-bottom: 1rem;
 }
 
-.parceira-box h5 {
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 0.5rem;
+.section-parceiras-horizontal p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
-.parceira-box .descricao {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
+/* Logos em linha */
+.logo-caixa {
+  width: 130px;
+  height: 130px;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.logo-caixa:hover {
+  transform: scale(1.05);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.logo-parceira-horizontal {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* filter: drop-shadow(0 0 4px rgba(0,0,0,0.2)); */
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .section-parceiras h2 {
+  .section-parceiras-horizontal {
+    padding: 60px 16px;
+  }
+
+  .section-parceiras-horizontal h2 {
     font-size: 1.5rem;
   }
 
-  .section-parceiras p.lead {
-    font-size: 1rem;
-  }
-
-  .logo-parceira {
-    max-width: 100px;
-    margin-bottom: 1rem;
-  }
-
-  .parceira-box .descricao {
+  .section-parceiras-horizontal p {
     font-size: 0.95rem;
   }
-}
 
-/* Google */
-.parceira-box.google {
-  background: linear-gradient(135deg, #4285F4, #34A853, #FBBC05, #EA4335);
-}
+  .logo-caixa {
+    width: 100px;
+    height: 64px;
+  }
 
-/* Meta */
-.parceira-box.meta {
-  background: linear-gradient(135deg, #1877F2, #8B9DC3);
-}
+  .logo-parceira-horizontal {
+    max-height: 100%;
+  }
 
-/* OpenAI */
-.parceira-box.openai {
-  background: linear-gradient(135deg, #10A37F, #1A1A1A);
+  .row.align-items-center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .row.align-items-center .col-md-6 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
