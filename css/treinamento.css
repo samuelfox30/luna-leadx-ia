@@ -1,0 +1,91 @@
+.xcamp-quadrado {
+  background-color: #000000;
+  padding: 0px 20px;
+  /* padding-top: 10px; */
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selo-programa {
+  background-color: #ff7a00; /* cor vibrante que destaca */
+  color: white;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.xcamp-card {
+  background-color: #0c0c0c;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  padding: 40px;
+  max-width: 880px;
+  text-align: center;
+}
+
+.xcamp-card h2 {
+  font-size: 2.2rem; /* aumenta o tamanho do título */
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.xcamp-card .descricao {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+}
+
+.xcamp-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.xcamp-info li {
+  margin-bottom: 0.5rem;
+}
+
+/* Botão CTA reaproveitado */
+.btn-ativar-plano {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-ativar-plano:hover {
+  background-color: #e96a00;
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .xcamp-card {
+    padding: 30px 20px;
+  }
+
+  .xcamp-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .xcamp-card .descricao,
+  .xcamp-info li {
+    font-size: 0.95rem;
+  }
+
+  .btn-ativar-plano {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
