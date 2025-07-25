@@ -58,7 +58,7 @@
 
     <!-- Botão CTA -->
     <div class="cta">
-      <a href="#formulario" class="btn-cta botao-animado">
+      <a href="#formulario" class="btn-cta botao-animado"  onclick="abrirFormulario()">
         <i class="bi bi-lightning-fill me-2"></i>Quero ativar a Luna
       </a>
     </div>
@@ -96,7 +96,7 @@
         <a href="#formulario" class="btn btn-lg fw-bold botao-animado quero-comecar-agora" onclick="abrirFormulario()">
           <i class="bi bi-lightning-fill me-2"></i>AGENDAR DEMONSTRAÇÃO
         </a>
-        <a href="#formulario" class="btn btn-lg fw-bold botao-secundario">
+        <a href="#formulario" class="btn btn-lg fw-bold botao-secundario"  onclick="abrirFormulario()">
           <i class="bi bi-list-check me-2"></i>VER PLANOS
         </a>
       </div>
@@ -165,11 +165,21 @@
       Diferente de chatbots comuns, a Luna simula conversas reais, se adapta ao perfil do seu lead e executa seu processo comercial com precisão e empatia.
     </p>
 
-    <div class="video-wrapper mx-auto rounded-4 overflow-hidden shadow">
-      <iframe class="video" 
-        src="https://www.youtube.com/embed/aCj6pUEbMss"
+    <div class="video-wrapper mx-auto rounded-4 overflow-hidden shadow" id="video-container">
+      <!-- Capa do vídeo -->
+      <div class="video-cover" onclick="revelarVideo()">
+        <img src="assets/img/BANNER PARA VIDEO.png" alt="Capa do vídeo da Luna" class="video-capa">
+        <div class="play-overlay">
+          <span class="play-icon">▶</span>
+        </div>
+      </div>
+
+      <!-- Iframe escondido inicialmente -->
+      <iframe class="video" id="iframe-luna"
+        src="https://www.youtube.com/embed/aCj6pUEbMss?autoplay=1"
         title="Luna IA - Apresentação"
-        allowfullscreen>
+        allowfullscreen
+        style="display: none;">
       </iframe>
     </div>
 
@@ -178,6 +188,12 @@
     </a>
   </div>
 </section>
+<script>
+  function revelarVideo() {
+    document.querySelector('.video-cover').style.display = 'none';
+    document.getElementById('iframe-luna').style.display = 'block';
+  }
+</script>
 
 <!-- BENEFICIOS DA JORNADA -------------------------------------------------------------------------------------------------------------------------------------->
 <section class="section-funcionalidades text-white">
@@ -273,7 +289,7 @@
     <div class="video-grid">
       <!-- Vídeo 1 -->
       <div class="video-thumb">
-        <img src="assets/img/BANNER PARA VIDEO.png" alt="Capa do vídeo de relato">
+        <img src="" alt="Capa do vídeo de relato">
         <div class="play-overlay">
           <span class="play-icon">▶</span>
         </div>
@@ -281,7 +297,7 @@
 
       <!-- Vídeo 2 -->
       <div class="video-thumb">
-        <img src="assets/img/BANNER PARA VIDEO.png" alt="Capa do vídeo de relato">
+        <img src="" alt="Capa do vídeo de relato">
         <div class="play-overlay">
           <span class="play-icon">▶</span>
         </div>
@@ -289,7 +305,7 @@
 
       <!-- Vídeo 3 -->
       <div class="video-thumb">
-        <img src="assets/img/BANNER PARA VIDEO.png" alt="Capa do vídeo de relato">
+        <img src="" alt="Capa do vídeo de relato">
         <div class="play-overlay">
           <span class="play-icon">▶</span>
         </div>
@@ -407,7 +423,7 @@
           <p class="ideal icons-color">
             <i class="bi bi-pin-angle-fill icons-color"></i> <strong>Ideal para:</strong> Atendimento geral, FAQs, formulários dinâmicos.
           </p>
-          <img src="assets/img/AGENTE_DE_SUPORTE-removebg-preview.png" class="img-fluid mt-3" alt="Genérico">
+          <img src="assets/img/AGENTE_GENÉRICO-removebg-preview.png" class="img-fluid mt-3" alt="Genérico">
         </div>
       </div>
 
@@ -419,7 +435,7 @@
           <p class="ideal icons-color">
             <i class="bi bi-pin-angle-fill icons-color"></i> <strong>Ideal para:</strong> Captação de leads, funil de vendas, agendamentos.
           </p>
-          <img src="assets/img/AGENTE_GENÉRICO-removebg-preview.png" class="img-fluid mt-3" alt="SDR">
+          <img src="assets/img/AGENTE_SDR_DE_VENDAS-removebg-preview.png" class="img-fluid mt-3" alt="SDR">
         </div>
       </div>
 
@@ -431,7 +447,7 @@
           <p class="ideal icons-color">
             <i class="bi bi-pin-angle-fill icons-color"></i> <strong>Ideal para:</strong> Atendimento ao cliente, triagem técnica, pós-venda.
           </p>
-          <img src="assets/img/AGENTE_SDR_DE_VENDAS-removebg-preview.png" class="img-fluid mt-3" alt="Suporte N1">
+          <img src="assets/img/AGENTE_DE_SUPORTE-removebg-preview.png" class="img-fluid mt-3" alt="Suporte N1">
         </div>
       </div>
     </div>
@@ -460,7 +476,7 @@
       <li>🎓 Acesso 100% gratuito</li>
     </ul>
 
-    <a href="#formulario" class="btn btn-ativar-plano mt-4">👉 Ativar meu acesso ao XCamp</a>
+    <a href="#formulario" class="btn btn-ativar-plano mt-4"  onclick="abrirFormulario()">👉 Ativar meu acesso ao XCamp</a>
   </div>
 </section>
 
@@ -530,7 +546,7 @@
       Se o seu negócio conversa com clientes por <strong>WhatsApp</strong>, a <strong>Luna</strong> pode atender por você.
     </p>
 
-    <a href="#" class="btn botao-animado mt-3">Quero começar agora</a>
+    <a href="#" class="btn botao-animado mt-3" onclick="abrirFormulario()">Quero começar agora</a>
   </div>
 </section>
 
