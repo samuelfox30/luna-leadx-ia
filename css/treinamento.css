@@ -8,7 +8,7 @@
   align-items: center;
 }
 .selo-programa {
-  background-color: #ff7a00; /* cor vibrante que destaca */
+  background-color: #bf01c9; /* cor vibrante que destaca */
   color: white;
   display: inline-block;
   padding: 6px 14px;
@@ -54,7 +54,7 @@
 
 /* Botão CTA reaproveitado */
 .btn-ativar-plano {
-  background-color: #ff7a00;
+  background-color: #bf01c9;
   color: white;
   border: none;
   border-radius: 50px;
@@ -65,7 +65,7 @@
 }
 
 .btn-ativar-plano:hover {
-  background-color: #e96a00;
+  background-color: #bf01c9;
   transform: scale(1.05);
 }
 

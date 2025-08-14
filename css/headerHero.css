@@ -54,17 +54,17 @@
 }
 
 .botao-animado {
-  background-color: #ff7a00;
+  background-color: #bf01c9;
   color: white;
 }
 
 .botao-animado:hover {
-  background-color: #e96a00;
+  background-color: #bf01c9;
 }
 
 .botao-secundario {
   background-color: transparent;
-  border: 1px solid #ff7a00;
+  border: 1px solid #bf01c9;
   color: white;
 }
 

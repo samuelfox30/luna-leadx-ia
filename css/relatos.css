@@ -86,14 +86,16 @@
 }
 
 .video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  justify-content: center;
   gap: 30px;
   margin-top: 20px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .video-thumb {
+  width: 380px; /* Tamanho mais compacto */
+  max-width: 100%;
   position: relative;
   border-radius: 12px;
   overflow: hidden;

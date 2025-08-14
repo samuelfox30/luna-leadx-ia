@@ -12,7 +12,7 @@
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
-  border-bottom: 2px solid #ff7a00; /* padrão desktop */
+  border-bottom: 2px solid #bf01c9; /* padrão desktop */
 }
 
 .tab-btn {
@@ -36,13 +36,13 @@
 }
 
 .tab-btn.ativo {
-  background: #ff7a00;
+  background: #bf01c9;
   color: #000;
   box-shadow: 0 -2px 0 #000 inset;
 }
 
 .tab-btn.ativo:hover {
-  background: #e96a00;
+  background: #bf01c9;
   color: #000 !important;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .passo-texto i {
-  color: #ff7a00; /* ou use .bg-cx */
+  color: #bf01c9; /* ou use .bg-cx */
 }
 
 .passo-texto p {
@@ -116,7 +116,7 @@
     flex-direction: column;
     align-items: stretch;
     border-bottom: none;
-    border-left: 2px solid #ff7a00;
+    border-left: 2px solid #bf01c9;
   }
 
   .tab-btn {

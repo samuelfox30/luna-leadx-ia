@@ -15,14 +15,14 @@
 }
 
 .plano-seletor .btn.ativo {
-  background-color: #ff7a00;
-  color: black;
-  border-color: #ff7a00;
+  background-color: #bf01c9;
+  color: rgb(255, 255, 255);
+  border-color: #bf01c9;
 }
 
 .desconto {
-  background-color: #ff7a00;
-  color: black;
+  background-color: #bf01c9;
+  color: rgb(255, 255, 255);
   padding: 3px 8px;
   border-radius: 8px;
   font-size: 0.8rem;
@@ -71,7 +71,7 @@
 }
 
 .novidade {
-  background: #ff7a00;
+  background: #bf01c9;
   color: black;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .preco-mensal {
-  color: #ff7a00;
+  color: #bf01c9;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -95,14 +95,14 @@
 
 .preco-anual {
   font-size: 1.6rem;
-  color: #ff7a00;
+  color: #bf01c9;
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
 
 /* Botão de ação */
 .btn-ativar-plano {
-  background-color: #ff7a00;
+  background-color: #bf01c9;
   color: white;
   border: none;
   border-radius: 50px;
@@ -113,7 +113,7 @@
 }
 
 .btn-ativar-plano:hover {
-  background-color: #e96a00;
+  background-color: #bf01c9;
   transform: scale(1.05);
 }
 
@@ -123,11 +123,11 @@
 }
 
 .growth {
-  background: linear-gradient(135deg, #2c1f00, #5c3300);
+  background: linear-gradient(135deg, #2c1f00, #57005c);
 }
 
 .scaleup {
-  background: linear-gradient(135deg, #1c1c3c, #002a60);
+  background: linear-gradient(135deg, #1c1c3c, #5c3300);
 }
 
 /* Texto destaque abaixo dos planos */
@@ -157,7 +157,7 @@
 }
 
 .popup-content h5 {
-  color: #ff7a00;
+  color: #bf01c9;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }

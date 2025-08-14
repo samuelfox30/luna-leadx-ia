@@ -15,21 +15,25 @@ body, html {
 }
 
 .icons-color{
-  color: #FF4F00;
+  color: #bf01c9;
 }
 
 .red-icon{
-  color: #d10000;
+  color: #bf01c9;
 }
 
 .bg-cx{
-  background-color: #FF4F00;
+  background-color: #bf01c9;
+}
+
+.color-cx{
+  color: #bf01c9;
 }
 
 .botao-animado{
   transition: 0.3s;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-              url('../assets/img/gifFundoLaranja.webp');
+              url('../assets/img/gif-novo-roxo.gif');
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -54,14 +58,14 @@ body, html {
 .botao-secundario{
   transition: 0.3s;
   background-color: black;
-  border: 1px solid #FF4F00;
-  color: #FF4F00;
+  border: 1px solid #bf01c9;
+  color: #bf01c9;
 }
 
 .botao-secundario:hover{
   transition: 0.3s;
   transform: translateY(-5px);
-  border: 1px solid #FF4F00;
+  border: 1px solid #bf01c9;
 }
 
 .text-clarinho{

@@ -17,11 +17,11 @@
 }
 
 .section-templates .highlight {
-  color: #6c63ff;
+  color: #bf01c9;
 }
 
 .section-templates .template-card {
-  background-image: linear-gradient(to top, #FF4F00, black, black);
+  background-image: linear-gradient(to top, #bf01c9, black, black);
   border-radius: 12px;
   padding: 25px;
   margin-top: 30px;

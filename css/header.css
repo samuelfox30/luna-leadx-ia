@@ -50,12 +50,12 @@
 }
 
 .menu-links a:hover {
-  color: #ff7a00;
+  color: #bf01c9;
 }
 
 /* Botão CTA desktop */
 .btn-cta {
-  background-color: #ff7a00;
+  background-color: #bf01c9;
   color: white;
   border-radius: 50px;
   font-weight: 600;
@@ -65,7 +65,7 @@
 }
 
 .btn-cta:hover {
-  background-color: #e96a00;
+  background-color: #bf01c9;
 }
 
 /* Botão hambúrguer mobile */
