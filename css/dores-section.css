@@ -27,3 +27,20 @@
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);             /* Sombra mais forte */
   border-color: rgba(255, 255, 255, 0.35);                 /* Realce da borda */
 }
+
+.botao-ver-planos {
+  background-color: transparent;
+  border: 2px solid #bf01c9;
+  color: #bf01c9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.botao-ver-planos:hover {
+  background-color: #bf01c9;
+  color: white;
+}

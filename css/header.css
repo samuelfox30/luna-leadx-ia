@@ -53,6 +53,42 @@
   color: #bf01c9;
 }
 
+
+/* Container dos dois botões */
+.cta-dupla {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Botão Ver Planos */
+.botao-ver-planos {
+  background-color: transparent;
+  border: 2px solid #bf01c9;
+  color: #bf01c9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.botao-ver-planos:hover {
+  background-color: #bf01c9;
+  color: white;
+}
+
+/* Botão Ativar Luna (mantém estilo original) */
+.botao-ativar-luna {
+  background-color: #bf01c9;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
 /* Botão CTA desktop */
 .btn-cta {
   background-color: #bf01c9;
@@ -126,4 +162,17 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.botao-ativar-luna:hover {
+  background-color: #a801aa;
+}
+
+/* Responsivo: oculta ambos no mobile */
+@media (max-width: 768px) {
+  .cta-dupla {
+    display: none;
+  }
 }
