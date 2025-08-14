@@ -53,6 +53,7 @@
     <nav class="menu-links">
       <a href="#como-funciona">Como funciona</a>
       <a href="#plataforma">Plataforma</a>
+       <a href="#section-planos-luna">Planos</a>
       <a href="#faq">FAQ</a>
     </nav>
 
@@ -281,7 +282,7 @@
     </div>
   </div>
   
-  <div class="videos-depoimentos mt-5">
+  <div class="videos-depoimentos mt-5" hidden>
     <h3 class="fw-bold mb-4">📹 Veja também os relatos em vídeo</h3>
     
     <div class="videos-depoimentos mt-5">
@@ -423,7 +424,7 @@
           <p class="ideal icons-color">
             <i class="bi bi-pin-angle-fill icons-color"></i> <strong>Ideal para:</strong> Atendimento geral, FAQs, formulários dinâmicos.
           </p>
-          <img src="assets/img/AGENTE_GENÉRICO-removebg-preview.png" class="img-fluid mt-3" alt="Genérico">
+          <img src="assets/img/AGENTE_GENERICO-removebg-preview.png" class="img-fluid mt-3" alt="Genérico">
         </div>
       </div>
 
@@ -713,19 +714,19 @@
 </section>
 
 <!-- ============================================== PLANOS ================================================================ -->
-<section class="section-planos-luna text-white">
+<section class="section-planos-luna text-white" id="section-planos-luna">
   <div class="container text-center">
     <h2 class="fw-bold mb-3">Um plano para cada fase da sua evolução digital</h2>
     <p class="lead mb-5 text-light">Agentes de IA que escalam com o seu negócio. Sem complicação. Com o melhor custo-benefício do mercado.</p>
 
     <!-- Alternador -->
-    <div class="d-flex justify-content-center gap-3 flex-wrap plano-seletor mb-5">
+    <div class="d-flex justify-content-center gap-3 flex-wrap plano-seletor mb-5" id="card-planos">
       <button class="btn btn-lg plano-opcao ativo" data-tipo="mensal">Plano mensal</button>
       <button class="btn btn-lg plano-opcao" data-tipo="anual">Plano anual <span class="desconto">15% OFF</span></button>
     </div>
 
     <!-- Cards -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" >
       <!-- Aceleração -->
       <div class="col-12 col-md-4 mb-4">
         <div class="plano-card p-4 rounded-4 h-100 text-start aceleracao" data-valor="249">
@@ -738,7 +739,14 @@
             <li>🌐 Comunidade + Programa de Aceleração</li>
             <li>🤖 Suporte automatizado</li>
           </ul>
-          <a href="#formulario" class="btn btn-ativar-plano mt-4">Comece agora</a>
+          <form class="criarCheckout">
+              <input type="hidden" name="plano" value="Plano Master"/>
+              <input type="hidden" name="valor" value="249" class="valor"/>
+            <input type="hidden" name="periodo" value="MONTHLY" class="input-periodo"/>
+ <input type="hidden" name="id_plano" value="1" />
+                <button type="submit" class="btn btn-ativar-plano mt-4">Comece agora</button>
+          </form>
+        
         </div>
       </div>
 
@@ -756,7 +764,13 @@
             <li>📲 Follow up automático <span class="novidade">NOVO!</span></li>
             <li>🤖 Suporte automatizado</li>
           </ul>
-          <a href="#formulario" class="btn btn-ativar-plano mt-4">Comece agora</a>
+          <form class="criarCheckout">
+              <input type="hidden" name="plano" value="Plano Pro"/>
+              <input type="hidden" name="valor" value="490" class="valor"/>
+           <input type="hidden" name="periodo" value="MONTHLY" class="input-periodo"/>
+ <input type="hidden" name="id_plano" value="2" />
+                <button type="submit" class="btn btn-ativar-plano mt-4">Comece agora</button>
+          </form>
         </div>
       </div>
 
@@ -774,7 +788,13 @@
             <li>📲 Follow up automático <span class="novidade">NOVO!</span></li>
             <li>🎯 Suporte 1:1 <span class="exclusivo">EXCLUSIVO!</span></li>
           </ul>
-          <a href="#formulario" class="btn btn-ativar-plano mt-4">Comece agora</a>
+              <form class="criarCheckout">
+              <input type="hidden" name="plano" value="Plano Enterprise"/>
+              <input type="hidden" name="valor" value="990" class="valor"/>
+             <input type="hidden" name="periodo" value="MONTHLY" class="input-periodo"/>
+ <input type="hidden" name="id_plano" value="3" />
+                <button type="submit" class="btn btn-ativar-plano mt-4">Comece agora</button>
+          </form>
         </div>
       </div>
     </div>
@@ -935,7 +955,12 @@
     <p class="mb-0 small">© 2025 <strong>Leadx IA</strong>. Todos os direitos reservados.</p>
   </div>
 </footer>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  
+  <!-- Popup de Loading (você pode estilizar melhor com CSS ou usar Bootstrap) -->
+<div id="loadingPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#ffffffcc; z-index:9999; text-align:center; padding-top:200px; font-size:20px;">
+  ⏳ Aguarde... você será redirecionado para a tela de cadastro.
+</div>
 <!-- ============================================== FORMULARIO ================================================================ -->
 <!-- Botão que abre o pop-up -->
 <!-- <button class="btn btn-lg botao-formulario" onclick="abrirFormulario()">Solicitar ativação</button> -->
@@ -943,15 +968,16 @@
 <div id="formPopup" class="form-popup">
   <div class="form-container">
     <span class="fechar" onclick="fecharFormulario()">&times;</span>
-    <h2 class="mb-4">Ative sua IA SDR agora</h2>
+    <h2 class="mb-4">Ative seu agente de IA agora!</h2>
 
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <input type="tel" placeholder="WhatsApp (DDD + número)" required>
-      <textarea placeholder="Escreva sua dúvida ou objetivo..." rows="4"></textarea>
-      <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
+<form id="CriarConta">
+  <input type="text" name="nome" placeholder="Seu nome" required>
+  <input type="email" name="email" placeholder="Seu e-mail" required>
+  <input type="tel" name="whatsapp" placeholder="WhatsApp (DDD + número)" required>
+  <input type="text" name="documento" placeholder="CPF ou CNPJ" required>
+
+  <button type="submit" class="btn-enviar">CRIAR CONTA</button>
+</form>
   </div>
 <script>
   function abrirFormulario() {
@@ -969,7 +995,43 @@
       popup.style.display = "none";
     }
   });
+  
+  jQuery('.criarCheckout').submit(function (e) {
+    e.preventDefault(); // Garante que o form não será enviado de forma tradicional
+
+    var $form = jQuery(this);
+    var $botao = $form.find('button[type="submit"]');
+
+    // Desabilita o botão e muda o texto
+    $botao.prop('disabled', true).text('Processando...');
+
+    var dados = $form.serialize();
+
+    
+    jQuery.ajax({
+        type: "POST",
+        dataType: "json",
+        url: 'https://webhook.connetx.com.br/webhook/87052c1c-1cdb-4389-9610-ed31188c3a55',
+        data: dados,
+        success: function (resposta) {
+            console.log('🔗 Link recebido:', resposta.link);
+            if (resposta.link) {
+                window.location.href = resposta.link;
+            } else {
+                alert('Erro: link de checkout não encontrado.');
+                $botao.prop('disabled', false).text('CRIAR CONTA'); // Reabilita
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error('Erro ao enviar dados:', error);
+            alert('Erro ao processar. Tente novamente.');
+            $botao.prop('disabled', false).text('CRIAR CONTA'); // Reabilita
+        }
+    });
+});
+
 </script>
+
 </div>
 
 <!--FADE UP EFECT-->

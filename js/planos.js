@@ -1,11 +1,16 @@
 // Alternância entre planos mensal e anual
 document.querySelectorAll('.plano-opcao').forEach(btn => {
   btn.addEventListener('click', () => {
+    const tipo = btn.getAttribute('data-tipo'); // Primeiro define o tipo
+
+    // Atualiza o campo hidden "periodo" dentro de cada form
+    document.querySelectorAll('.input-periodo').forEach(input => {
+      input.value = tipo === 'mensal' ? 'MONTHLY' : 'YEARLY';
+    });
+
     // Ativa botão selecionado
     document.querySelectorAll('.plano-opcao').forEach(b => b.classList.remove('ativo'));
     btn.classList.add('ativo');
-
-    const tipo = btn.getAttribute('data-tipo');
 
     // Mostra texto correspondente
     document.getElementById('mensal-info').style.display = tipo === 'mensal' ? 'block' : 'none';
@@ -53,25 +58,3 @@ document.querySelectorAll('.plano-opcao').forEach(btn => {
     });
   });
 });
-
-// Observa quando a section entra na tela e inicia o contador
-const sectionPlanos = document.querySelector('.section-planos-luna');
-let ofertaAtivada = false;
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !ofertaAtivada) {
-      ofertaAtivada = true;
-      setTimeout(() => {
-        document.getElementById('popup-oferta').style.display = 'block';
-      }, 15000); // 15 segundos depois de visível
-    }
-  });
-}, { threshold: 0.5 }); // metade visível
-
-observer.observe(sectionPlanos);
-
-// Fecha pop-up manualmente
-function fecharPopupOferta() {
-  document.getElementById('popup-oferta').style.display = 'none';
-}
