@@ -144,3 +144,16 @@
     max-width: 100%;
   }
 }
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.video-player:hover {
+  transform: scale(1.03);
+}

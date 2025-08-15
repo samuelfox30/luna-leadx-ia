@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luna Leadx</title>
 
     <!-- BOOTSTRAP IMPORTS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--CSS-->
@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!--LOCAL CSS-->
+    <link rel="shortcut icon" href="https://lab.crmleadx.com.br/assets/painel/assets/img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/headerHero.css">
@@ -54,7 +55,7 @@
       <a href="#como-funciona">Como funciona</a>
       <a href="#plataforma">Plataforma</a>
        <a href="#section-planos-luna">Planos</a>
-      <a href="#faq">FAQ</a>
+      <a href="#FAQ">FAQ</a>
     </nav>
 
     <!-- Botão CTA -->
@@ -160,7 +161,7 @@
 <script src="js/prova-social.js"></script>
 
 <!-- QUEM E A LUNA ------------------------------------------------------------------------------------------------------------------------------------------->
-<section class="section-luna text-white">
+<section id="como-funciona" class="section-luna text-white">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">
       <div>Enquanto você <span class="icons-color">foca no crescimento</span></div>
@@ -293,19 +294,19 @@
   <div class="video-grid">
     <!-- Vídeo 1 -->
     <div class="video-thumb">
-      <img src="assets/img/capa-video1.jpg" alt="Capa do vídeo de relato 1">
-      <div class="play-overlay">
-        <span class="play-icon">▶</span>
-      </div>
+      <video class="video-player" controls preload="metadata">
+        <source src="assets/img/IMG_2805.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
     </div>
 
-    <!-- Vídeo 2 -->
     <div class="video-thumb">
-      <img src="assets/img/capa-video2.jpg" alt="Capa do vídeo de relato 2">
-      <div class="play-overlay">
-        <span class="play-icon">▶</span>
-      </div>
+      <video class="video-player" controls preload="metadata">
+        <source src="assets/img/IMG_2806.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
     </div>
+
   </div>
 </div>
 
@@ -313,7 +314,7 @@
 </section>
 
 <!-- ============================================== COMO FUNCIONA ================================================================ -->
-<section class="section-como-funciona text-white">
+<section id="plataforma" class="section-como-funciona text-white">
   <div class="container">
     <h2 class="fw-bold text-center mb-5">
       <span class="icons-color">Crie</span> seu primeiro funcionário de IA <span class="icons-color">em minutos</span><br>
@@ -339,7 +340,7 @@
               <p>Defina o papel do seu agente. Como ele deve agir, responder e representar sua marca. Você escreve com palavras. Ele entende com inteligência.</p>
             </div>
             <div class="passo-imagem">
-              <img src="assets/img/formulario-simples.jpg" alt="Imagem do passo 1">
+              <img src="assets/img/passo1.png" alt="Imagem do passo 1">
             </div>
           </div>
         </div>
@@ -352,7 +353,7 @@
               <p>Adicione produtos, serviços e dúvidas frequentes. Seu agente aprende tudo  e responde como alguém da sua equipe.</p>
             </div>
             <div class="passo-imagem">
-              <img src="assets/img/onboarding-personalizado.jpeg" alt="Imagem do passo 2">
+              <img src="assets/img/passo2.png" alt="Imagem do passo 2">
             </div>
           </div>
         </div>
@@ -365,7 +366,7 @@
               <p>Compartilhe seus processos, integrações e caminhos. O agente segue instruções com precisão. Nada de complicações. Só fluidez.</p>
             </div>
             <div class="passo-imagem">
-              <img src="assets/img/implementacao-assistida.webp" alt="Imagem do passo 3">
+              <img src="assets/img/passo3.png" alt="Imagem do passo 3">
             </div>
           </div>
         </div>
@@ -378,7 +379,7 @@
               <p>Veja como o agente responde. Dê feedback. Ajuste o que for preciso. Evolução contínua, com base na realidade.</p>
             </div>
             <div class="passo-imagem">
-              <img src="assets/img/piloto-automatico.webp" alt="Imagem do passo 4">
+              <img src="assets/img/passo4.png" alt="Imagem do passo 4">
             </div>
           </div>
         </div>
@@ -391,7 +392,7 @@
               <p>Um funcionário digital pronto para conversar, qualificar e vender  em minutos. Tudo 100% visual. Sem escrever uma linha de código.</p>
             </div>
             <div class="passo-imagem">
-              <img src="assets/img/resultado-ilustracao.png" alt="Imagem do passo 5">
+              <img src="assets/img/passo5.png" alt="Imagem do passo 5">
             </div>
           </div>
         </div>
@@ -454,18 +455,21 @@
 <!-- ============================================== TREINAMENTO ================================================================ -->
 <section class="xcamp-quadrado">
   <div class="xcamp-card">
-    <div class="selo-programa">🚀 Programa de Aceleração</div>
+    <div class="selo-programa">XCAMP</div>
     
-    <h2 class="fw-bold">XCamp – <span class="icons-color">Domine</span> a criação e gestão dos <span class="icons-color">seus Agentes de IA</span></h2>
+    <h2 class="fw-bold">Aprenda a criar, treinar e escalar seus Agentes com <span class="icons-color">autonomia</span></h2>
 
     <p class="descricao">
-      Aprenda a <strong>criar, treinar e escalar</strong> seus Agentes com autonomia.
-      <br>O XCamp é o nosso programa oficial de capacitação:
-      <strong>conteúdos práticos, estratégias testadas</strong> e passo a passo para transformar sua IA em resultados reais.
+      O XCamp é o nosso espaço de capacitação contínua, com <strong>conteúdos práticos</strong> 
+      e orientações que te ajudam a <strong>evoluir no uso dos seus Agentes Luna</strong>.
     </p>
 
     <p class="descricao mt-3">
-      Tudo o que você precisa para <strong>estruturar e administrar seus Funcionários de IA</strong> — <span class="icons-color">sem complicação</span>, do início ao avançado.
+      Você terá acesso a materiais que <strong>facilitam a criação</strong>, 
+      personalização e gestão dos seus Funcionários de IA 
+      no seu ritmo e <strong>alinhado às necessidades do seu negócio</strong>. 
+      E claro, nossa equipe também estará à disposição sempre 
+      que você precisar de suporte.
     </p>
 
     <ul class="xcamp-info mt-4">
@@ -866,7 +870,7 @@
 </section>
 
 <!-- ============================================== SECTION PERGUNTAS ================================================================ -->
-<section class="section-faq section-empresas-ofc text-white">
+<section id="FAQ" class="section-faq section-empresas-ofc text-white">
   <div class="container">
     <h2 class="fw-bold text-center mb-5">FAQ – <span class="icons-color">Perguntas Frequentes</span></h2>
 

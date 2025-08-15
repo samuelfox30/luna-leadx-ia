@@ -1,7 +1,6 @@
 .section-como-funciona {
-  background-color: #000000;
-  padding: 80px 20px;
-  padding-bottom: 130px;
+  background-color: #000;
+  padding: 80px 20px 130px;
 }
 
 /* Abas estilo navegador */
@@ -12,20 +11,17 @@
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
-  border-bottom: 2px solid #bf01c9; /* padrão desktop */
+  border-bottom: 2px solid #bf01c9;
 }
 
 .tab-btn {
   background: #1a1a1a;
   border: none;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-radius: 8px 8px 0 0;
   color: white;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
-  position: relative;
-  z-index: 2;
   margin-right: 2px;
   transition: background 0.3s ease, color 0.3s ease;
   box-shadow: 0 -2px 0 transparent inset;
@@ -41,11 +37,6 @@
   box-shadow: 0 -2px 0 #000 inset;
 }
 
-.tab-btn.ativo:hover {
-  background: #bf01c9;
-  color: #000 !important;
-}
-
 /* Conteúdo da aba com fade-in suave */
 .passos-conteudo {
   position: relative;
@@ -56,7 +47,6 @@
   background: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 0 0 8px 8px;
-  font-size: 1.1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
@@ -80,38 +70,42 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
 .passo-texto {
-  flex: 1;
+  flex: none;
+  max-width: 460px;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
 
 .passo-texto i {
-  color: #bf01c9; /* ou use .bg-cx */
+  font-size: 2rem;
+  color: #bf01c9;
 }
 
 .passo-texto p {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   line-height: 1.6;
 }
 
 .passo-imagem {
-  flex: 1;
-  max-width: 280px;
+  flex: none;
+  max-width: 600px;
 }
 
 .passo-imagem img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
-/* Responsividade mobile: abas verticais com linha lateral */
 @media (max-width: 768px) {
+  /* Navegação vertical com linha lateral */
   .passos-nav {
     flex-direction: column;
     align-items: stretch;
@@ -122,8 +116,7 @@
   .tab-btn {
     width: 100%;
     border-radius: 0;
-    margin-right: 0;
-    margin-bottom: 4px;
+    margin: 0 0 4px 0;
     text-align: left;
     padding: 1rem;
   }
@@ -132,15 +125,29 @@
     border-radius: 0;
   }
 
+  /* Layout vertical */
   .passo-content {
     flex-direction: column;
-    gap: 1rem;
     align-items: flex-start;
+    gap: 1.5rem;
   }
 
   .passo-texto {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .passo-texto i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #bf01c9;
+  }
+
+  .passo-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
   }
 
   .passo-imagem {
@@ -150,32 +157,6 @@
   .passo-imagem img {
     width: 100%;
     height: auto;
-  }
-}
-
-
-
-
-
-
-/* Ajuste no desktop para deixar o conteúdo mais junto */
-@media (min-width: 769px) {
-  .passo-content {
-    justify-content: center;
-  }
-
-  .passo-texto {
-    flex: none;
-    max-width: 460px;
-  }
-
-  .passo-imagem {
-    flex: none;
-    max-width: 240px;
-  }
-
-  .passo-texto p {
-    font-size: 1rem;
-    line-height: 1.5;
+    border-radius: 8px;
   }
 }
